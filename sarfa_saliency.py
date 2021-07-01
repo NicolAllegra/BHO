@@ -68,8 +68,8 @@ def computeSaliencyUsingSarfa(original_action, dict_q_vals_before_perturbation, 
     # print("KL normalized = ", K)
     # print("KL normalized inverse = ", 1/K)
     # print(entry['saliency'])
-    #return answer, dP, K, QmaxAnswer, action_gap_before_perturbation, action_gap_after_perturbation 
-    return answer,dP,K
+    return answer, dP, K, QmaxAnswer, action_gap_before_perturbation, action_gap_after_perturbation 
+    #return answer,dP,K
 
 def computeSaliencyUsingQMaxChange(original_action, dict_q_vals_before_perturbation, dict_q_vals_after_perturbation):
     answer = 0
