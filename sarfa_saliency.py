@@ -82,8 +82,8 @@ def computeSaliencyUsingQMaxChange(original_action, dict_q_vals_before_perturbat
             best_action = move
             best_q_value = q_value
         elif q_value > best_q_value:
-           best_q_value = q_value
-           best_action = move 
+            best_q_value = q_value
+            best_action = move 
 
     if best_action != original_action:
         answer = 1
